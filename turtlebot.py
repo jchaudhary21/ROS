@@ -16,10 +16,10 @@ class Turtle():                                                                 
     def __init__(self):                                                                    # initializing constructor 
                                                                                     
         self.pub = rospy.Publisher('/turtle1/cmd_vel',Twist,queue_size =100)               #  -- Publishing @ topic turtle1/cmd_vel  --
-        										                                                               # |                                         |
-         										                                                               # |     TO CHECK ACTIVE TOPICS RUN          |
-											                                                                     # |         " rostopic list "               |
-											                                                                     # |                                         |        
+        										      # |                                         |
+         										      # |     TO CHECK ACTIVE TOPICS RUN          |
+											      # |         " rostopic list "               |
+											      # |                                         |        
         self.subs = rospy.Subscriber('/turtle1/pose',Pose, self.callback)                  #  -- Subscribing @ topic turtle1/pose    --
         
         self.pose = Pose()                                                                 # Creating object    
