@@ -56,8 +56,8 @@ while (round(call_class.orientation()[0],1) != v):                              
     call_class.pub.publish(call_class.twist)   
     print(" ")                 
     print ("Current Angular Position θ : {}".format(round(call_class.orientation()[0],1)))    # -- 
-    print ("Current Angular Position x : {}".format(round(call_class.position()[0],1)))       #    | printing some important stuff 
-    print ("Current Angular Position y : {}".format(round(call_class.position()[1],1)))       # -- 
+    print ("Current Linear Position x : {}".format(round(call_class.position()[0],1)))       #    | printing some important stuff 
+    print ("Current Linear Position y : {}".format(round(call_class.position()[1],1)))       # -- 
     v = initial_theta
     r.sleep()
     
